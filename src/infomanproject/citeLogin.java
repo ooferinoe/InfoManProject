@@ -183,8 +183,6 @@ public class citeLogin extends JFrame implements MouseListener
     {
         if(e.getSource()==lblCreate)
         {
-            Logins = 0;
-            JOptionPane.showMessageDialog(null, "Redirecting to Viewiing Table...","Login Success",JOptionPane.INFORMATION_MESSAGE);
             dispose();
             citeRegister regis = new citeRegister();
             regis.setVisible(true);
@@ -200,6 +198,8 @@ public class citeLogin extends JFrame implements MouseListener
             if(number.equals("2022-00239-BN-0") && pass.equals("atomoz") && month.equals(7)
                     && day.equals(7) && year.equals(5))
             {
+                Logins = 0;
+                JOptionPane.showMessageDialog(null, "Redirecting to Viewing Table...","Login Success",JOptionPane.INFORMATION_MESSAGE);
                 dispose();
                 citeView view = new citeView();
                 view.setVisible(true);
