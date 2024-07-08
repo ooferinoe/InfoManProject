@@ -77,13 +77,13 @@ public class citeLogin extends JFrame implements MouseListener
         add(lblCD);
         
         //Login
-        lblLogin = new JLabel("LOGIN");
-        lblLogin.setBounds(680, 100, 120, 40);
+        lblLogin = new JLabel("ADMIN LOGIN");
+        lblLogin.setBounds(640, 100, 200, 40);
         lblLogin.setFont(new Font("Times New Roman", Font.BOLD, 20));
         add(lblLogin);
         
         //Student ID
-        lblID = new JLabel("Student Number:");
+        lblID = new JLabel("Username:");
         lblID.setBounds(550, 150, 120, 40);
         lblID.setFont(new Font("Times New Roman", Font.BOLD, 12));
         add(lblID);
@@ -195,7 +195,7 @@ public class citeLogin extends JFrame implements MouseListener
             Object day = cbDay.getSelectedIndex();
             Object year = cbYear.getSelectedIndex();
             
-            if(number.equals("2022-00239-BN-0") && pass.equals("atomoz") && month.equals(7)
+            if(number.equalsIgnoreCase("Atomoz") && pass.equals("ooferinoe") && month.equals(7)
                     && day.equals(7) && year.equals(5))
             {
                 Logins = 0;
