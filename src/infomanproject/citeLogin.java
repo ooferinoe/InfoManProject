@@ -47,9 +47,10 @@ public class citeLogin extends JFrame implements MouseListener
         lblLogo = new JLabel(FinalLogo);
         
         Logo2 = new ImageIcon("Images/PUPBC_Logo.png");
-        Image ResizedLogo2 = Logo2.getImage().getScaledInstance(100,100,Image.SCALE_SMOOTH);
+        Image ResizedLogo2 = Logo2.getImage().getScaledInstance(300,300,Image.SCALE_SMOOTH);
         ImageIcon FinalLogo2 = new ImageIcon(ResizedLogo2);
         lblLogo2 = new JLabel(FinalLogo2);
+        lblLogo2.setBounds(110,160,300,300);
         
         
         header = new JPanel();
@@ -71,7 +72,7 @@ public class citeLogin extends JFrame implements MouseListener
         add(lblLogo2);
         
         lblCD = new JLabel();
-        lblCD.setBounds(50,330,300,30);
+        lblCD.setBounds(50,530,300,30);
         lblCD.setFont(new Font("Times New Roman", Font.BOLD,20));
         lblCD.setVisible(false);
         add(lblCD);
